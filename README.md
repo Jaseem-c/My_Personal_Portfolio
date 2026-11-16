@@ -1,6 +1,9 @@
 # Jaseem C — Portfolio
 
 Personal portfolio of **Jaseem C**, Software Engineer (Backend & AI Applications).
+
+🌐 **Live:** [jaseemc.online](https://jaseemc.online)
+
 Built with Next.js (App Router), TypeScript, Tailwind CSS v4, Framer Motion and Lucide.
 
 ## Quick start
