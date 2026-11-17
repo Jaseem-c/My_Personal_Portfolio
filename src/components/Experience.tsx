@@ -1,6 +1,6 @@
 import { Briefcase, Calendar, MapPin } from "lucide-react";
 import { experiences } from "@/data/portfolio";
-import { Reveal, SectionHeading, TechBadge } from "./ui";
+import { Reveal, SectionHeading } from "./ui";
 
 export function Experience() {
   return (
@@ -10,7 +10,6 @@ export function Experience() {
           index="02"
           label="experience"
           title={<span id="experience-heading">Where I&apos;ve worked</span>}
-          description="Backend services, real-time systems and AI assistants for enterprise manufacturing software — plus the full-stack foundation that came before."
         />
 
         <ol className="relative space-y-10">
@@ -34,7 +33,7 @@ export function Experience() {
 
               <Reveal delay={0.05} className="md:pl-8">
                 <article className="group rounded-xl border border-line bg-surface transition-colors hover:border-line-strong">
-                  <header className="flex flex-wrap items-start justify-between gap-3 border-b border-line px-5 py-4 sm:px-6">
+                  <header className="flex flex-wrap items-start justify-between gap-3 px-5 py-5 sm:px-6">
                     <div>
                       <h3 className="text-lg font-semibold text-fg">{exp.role}</h3>
                       <p className="mt-0.5 flex items-center gap-1.5 text-sm text-blue">
@@ -53,34 +52,6 @@ export function Experience() {
                       </span>
                     </div>
                   </header>
-
-                  <div className="px-5 py-5 sm:px-6">
-                    <p className="mb-4 font-mono text-[13px] text-muted">
-                      <span className="text-green">{"// "}</span>
-                      {exp.summary}
-                    </p>
-                    <ul className="space-y-2.5">
-                      {exp.highlights.map((h) => (
-                        <li key={h} className="flex gap-3 text-[15px] leading-relaxed text-fg/85">
-                          <span aria-hidden="true" className="mt-[3px] font-mono text-xs text-blue">→</span>
-                          <span>{h}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    {exp.note && (
-                      <p className="mt-4 rounded-lg border border-dashed border-line-strong px-4 py-3 text-sm text-muted">
-                        <span className="font-mono text-xs text-violet">note: </span>
-                        {exp.note}
-                      </p>
-                    )}
-                    <ul className="mt-5 flex flex-wrap gap-1.5" aria-label="Technologies used">
-                      {exp.tech.map((t) => (
-                        <li key={t}>
-                          <TechBadge name={t} />
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
                 </article>
               </Reveal>
             </li>
