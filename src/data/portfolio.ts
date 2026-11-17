@@ -161,20 +161,6 @@ export const skillGroups: SkillGroup[] = [
     items: ["FastAPI", "Go Fiber", "Node.js", "Express.js", "REST APIs", "Swagger / OpenAPI"],
   },
   {
-    file: "genai.py",
-    title: "AI & Generative AI",
-    items: [
-      "LLMs",
-      "Generative AI",
-      "Prompt Engineering",
-      "RAG",
-      "Embeddings",
-      "Vector Search",
-      "Query Expansion",
-      "AI Agents",
-    ],
-  },
-  {
     file: "frontend.tsx",
     title: "Frontend",
     items: ["React.js", "HTML5", "CSS3", "Bootstrap"],
@@ -192,12 +178,7 @@ export const skillGroups: SkillGroup[] = [
   {
     file: "ai_tools.yaml",
     title: "AI Frameworks & Tools",
-    items: ["LangChain", "ChromaDB"],
-  },
-  {
-    file: "dev_tools.json",
-    title: "AI Developer Tools",
-    items: ["Cursor", "Claude", "ChatGPT", "Gemini API", "GitHub Copilot"],
+    items: ["LangChain", "ChromaDB", "Cursor", "Claude", "ChatGPT", "Gemini API", "GitHub Copilot"],
   },
 ];
 

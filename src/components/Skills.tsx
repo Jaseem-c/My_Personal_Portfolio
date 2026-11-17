@@ -2,7 +2,7 @@ import { skillGroups } from "@/data/portfolio";
 import { TechIcon } from "./icons";
 import { Reveal, SectionHeading } from "./ui";
 
-const wide = new Set(["genai.py", "infra.yml", "ai_tools.yaml", "dev_tools.json"]);
+const wide = new Set(["infra.yml", "ai_tools.yaml"]);
 const accents = ["text-blue", "text-green", "text-violet", "text-orange", "text-cyan", "text-pink", "text-blue", "text-violet"];
 
 export function Skills() {
